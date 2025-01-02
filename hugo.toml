@@ -100,7 +100,7 @@ paginate = 5
           url = "/en/showcase"
 
   [languages.zh-TW]
-    languageName = "中文（繁體）"
+    languageName = "繁體中文"
     title = "randint.cc"
 
     [languages.zh-TW.params]
