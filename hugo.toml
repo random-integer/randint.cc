@@ -1,143 +1,89 @@
-baseURL = 'https://randint.cc/'
-languageCode = 'en'
-theme = 'terminal'
-paginate = 5
+# Basic config
+baseURL = "https://randint.cc"
+theme = "hugo-bearcub"
+copyright = "© 2025 randint"
+defaultContentLanguage = "en"
 
-[params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+# Generate a nice robots.txt for SEO
+enableRobotsTXT = true
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+# Setup syntax highlighting without inline styles. For more information about
+# why you'd want to avoid inline styles, see
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src#unsafe_inline_styles
+[markup]
+  [markup.highlight]
+    lineNos = true
+    lineNumbersInTable = false
+    # This allows Bear Cub to use a variation of Dracula that is more accessible
+    # to people with poor eyesight. For more information about color contrast
+    # and accessibility, see https://web.dev/color-and-contrast-accessibility/
+    noClasses = false
 
-  # show selector to switch language
-  showLanguageSelector = true
-
-  # set theme to full screen width
-  fullWidthTheme = false
-
-  # center theme with default width
-  centerTheme = false
-
-  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
-  # then the file will be used as a cover automatically.
-  # With this option you don't have to put the `cover` param in a front-matter.
-  autoCover = true
-
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = false
-
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
-
-  # whether to show a page's estimated reading time
-  # readingTime = false # default
-
-  # whether to show a table of contents
-  # can be overridden in a page's front-matter
-  # Toc = false # default
-
-  # set title for the table of contents
-  # can be overridden in a page's front-matter
-  # TocTitle = "Table of Contents" # default
-
-  # Set date/time format for posts
-  # This will impact the date/time displayed on
-  # index.html, the posts list page, and on posts themselves
-  # This value can also be configured per-post on front matter
-  # If you have any issues with the timezone rendering differently
-  # than you expected, please ensure your timezone is correctly set
-  # on your server.
-  # This value can be customized according to Hugo documentation:
-  # https://gohugo.io/functions/time/format/
-  # Default value (no changes needed):
-  # dateFormat = "2006-01-02"
-  # Example format, with date, time, and timezone abbreviation:
-  # dateFormat = "2006-01-02 3:04:06 PM MST"
-
-
-[params.twitter]
-  # set Twitter handles for Twitter cards
-  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-  # do not include @
-  creator = ""
-  site = ""
-
+# Multilingual mode config. More for information about how to setup translation,
+# see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    contentDir = "content/en"
+    title = "randint.cc"
     languageName = "English"
-    title = "randint.cc"
-
+    LanguageCode = "en-us"
+    contentDir = "content/en"
     [languages.en.params]
-      subtitle = "randint's site"
-      owner = "randint"
-      keywords = ""
-      copyright = "© 2025 randint"
-      menuMore = "Show more"
-      readMore = "Read more"
-      readOtherPosts = "Read other posts"
-      newerPosts = "Newer posts"
-      olderPosts = "Older posts"
-      missingContentMessage = "Page not found"
-      missingBackButtonLabel = "Back to home page"
-      minuteReadingTime = "min read"
-      words = "words"
-
-      [languages.en.params.logo]
-        logoText = "randint.cc"
-        logoHomeLink = "/"
-
-      [languages.en.menu]
-        [[languages.en.menu.main]]
-          identifier = "about.en"
-          name = "About"
-          url = "/en/about"
-        # [[languages.en.menu.main]]
-        #   identifier = "showcase.en"
-        #   name = "Showcase"
-        #   url = "/en/showcase"
-        [[languages.en.menu.main]]
-          identifier = "socials.en"
-          name = "Socials"
-          url = "/en/socials"
-
-  [languages.zh-TW]
-    contentDir = "content/zh-tw"
-    languageName = "繁體中文"
+      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
+  [languages.zh]
     title = "randint.cc"
+    languageName = "繁體中文"
+    LanguageCode = "zh-tw"
+    contentDir = "content/zh"
+    [languages.zh.params]
+      madeWith = "Hugo 主題：[Bear Cub](https://github.com/clente/hugo-bearcub)"
 
-    [languages.zh-TW.params]
-      subtitle = "randint 的小站"
-      owner = "randint"
-      keywords = ""
-      copyright = "© 2025 randint"
-      menuMore = "顯示更多"
-      readMore = "閱讀更多"
-      readOtherPosts = "閱覽其他文章"
-      newerPosts = "較新的文章"
-      olderPosts = "較舊的文章"
-      missingContentMessage = "404 找不到"
-      missingBackButtonLabel = "回主頁"
-      minuteReadingTime = "分鐘閱讀時長"
-      words = "字"
+[params]
+  # The description of your website
+  description = "randint's site"
 
-      [languages.zh-TW.params.logo]
-        logoText = "randint.cc"
-        logoHomeLink = "/zh-tw"
+  # The path to your favicon
+  favicon = "static/favicon.png"
 
-      [languages.zh-TW.menu]
-        [[languages.zh-TW.menu.main]]
-          identifier = "about.zh-tw"
-          name = "關於我"
-          url = "/zh-tw/about"
-        # [[languages.zh-TW.menu.main]]
-        #   identifier = "showcase.zh-tw"
-        #   name = "到底？"
-        #   url = "/zh-tw/showcase"
-        [[languages.zh-TW.menu.main]]
-          identifier = "socials.zh-tw"
-          name = "聯繫我"
-          url = "/zh-tw/socials"
+  # These images will show up when services want to generate a preview of a link
+  # to your site. Ignored if `generateSocialCard = true`. For more information
+  # about previews, see https://gohugo.io/templates/internal#twitter-cards and
+  # https://gohugo.io/templates/internal#open-graph
+  images = ["images/share.webp"]
+
+  # This title is used as the site_name on the Hugo's internal opengraph
+  # structured data template
+  title = "randint.cc"
+
+  # Dates are displayed following the format below. For more information about
+  # formatting, see https://gohugo.io/functions/format/
+  dateFormat = "2006-01-02"
+
+  # If your blog is multilingual but you haven't translated a page, this theme
+  # will create a disabled link. By setting `hideUntranslated` to true, you can
+  # have the theme simply not show any link
+  hideUntranslated = false
+
+  # (EXPERIMENTAL) This theme has two options for its CSS styles: "original" and
+  # "herman". The former is what you see on Bear Cub's demo (an optimized
+  # version of Hugo Bear Blog), while the latter has a more modern look based on
+  # Herman Martinus's version of the Blogster Minimal theme for Astro.
+  themeStyle = "original"
+
+  # (EXPERIMENTAL) This theme is capable of dynamically generating social cards
+  # for posts that don't have `images` defined in their front matter; By setting
+  # `generateSocialCard` to false, you can prevent this behavior. For more
+  # information see layouts/partials/social_card.html
+  generateSocialCard = true
+
+  # Social media. Delete any item you aren't using to make sure it won't show up
+  # in your website's metadata.
+  [params.social]
+    twitter = "example" # Twitter handle (without '@')
+    facebook_admin = "0000000000" # Facebook Page Admin ID
+
+  # Author metadata. This is mostly used for the RSS feed of your site, but the
+  # email is also added to the footer of each post. You can hide the "reply to"
+  # link by using a `hideReply` param in front matter.
+  [params.author]
+    name = "randint" # Your name as shown in the RSS feed metadata
+    email = "" # Added to the footer so readers can reply to posts
