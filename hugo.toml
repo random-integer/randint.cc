@@ -29,6 +29,7 @@ enableRobotsTXT = true
     contentDir = "content/en"
     [languages.en.params]
       madeWith = "Made with [Hugo](https://gohugo.io/) + [Bear Cub](https://github.com/clente/hugo-bearcub)"
+      dateFormat = "2 Jan 2006"
   [languages.zh]
     title = "randint.cc"
     languageName = "繁體中文"
@@ -36,6 +37,7 @@ enableRobotsTXT = true
     contentDir = "content/zh"
     [languages.zh.params]
       madeWith = "使用 [Hugo](https://gohugo.io/) + 主題 [Bear Cub](https://github.com/clente/hugo-bearcub) 製作"
+      dateFormat = "2006年1月2日"
   [languages.ja]
     title = "randint.cc"
     languageName = "日本語"
@@ -43,6 +45,7 @@ enableRobotsTXT = true
     contentDir = "content/ja"
     [languages.ja.params]
       madeWith = "Made with [Hugo](https://gohugo.io/) + [Bear Cub](https://github.com/clente/hugo-bearcub)"
+      dateFormat = "2006年1月2日"
 
 [params]
   # The description of your website
