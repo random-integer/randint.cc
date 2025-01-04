@@ -1,8 +1,11 @@
 +++
 title = '自己紹介'
 date = 2025-01-04T16:49:34+09:00
-draft = true
+menu = 'main'
+weight = 3
 +++
+
+# 自己紹介
 
 randint と申します。
 

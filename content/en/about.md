@@ -1,8 +1,11 @@
 +++
 title = 'About'
 date = 2025-01-04T13:55:12+09:00
-draft = true
+menu = 'main'
+weight = 3
 +++
+
+# About
 
 Hello! I'm randint.
 
