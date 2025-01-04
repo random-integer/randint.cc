@@ -36,13 +36,20 @@ enableRobotsTXT = true
     contentDir = "content/zh"
     [languages.zh.params]
       madeWith = "Hugo 主題：[Bear Cub](https://github.com/clente/hugo-bearcub)"
+  [languages.ja]
+    title = "randint.cc"
+    languageName = "日本語"
+    LanguageCode = "ja"
+    contentDir = "content/ja"
+    [languages.ja.params]
+      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]
   # The description of your website
   description = "randint's site"
 
   # The path to your favicon
-  favicon = "static/favicon.png"
+  favicon = "favicon.png"
 
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information
@@ -78,8 +85,8 @@ enableRobotsTXT = true
   # Social media. Delete any item you aren't using to make sure it won't show up
   # in your website's metadata.
   [params.social]
-    twitter = "example" # Twitter handle (without '@')
-    facebook_admin = "0000000000" # Facebook Page Admin ID
+    #twitter = "example" # Twitter handle (without '@')
+    #facebook_admin = "0000000000" # Facebook Page Admin ID
 
   # Author metadata. This is mostly used for the RSS feed of your site, but the
   # email is also added to the footer of each post. You can hide the "reply to"

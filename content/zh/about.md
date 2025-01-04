@@ -1,10 +1,8 @@
 +++
-title = "About"
+title = "關於我"
 date = "2025-01-03"
 draft = true
 +++
-
-# 關於我
 
 你好，我是 randint。
 
