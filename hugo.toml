@@ -28,21 +28,21 @@ enableRobotsTXT = true
     LanguageCode = "en-us"
     contentDir = "content/en"
     [languages.en.params]
-      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
+      madeWith = "Made with [Hugo](https://gohugo.io/) + [Bear Cub](https://github.com/clente/hugo-bearcub)"
   [languages.zh]
     title = "randint.cc"
     languageName = "繁體中文"
     LanguageCode = "zh-tw"
     contentDir = "content/zh"
     [languages.zh.params]
-      madeWith = "Hugo 主題：[Bear Cub](https://github.com/clente/hugo-bearcub)"
+      madeWith = "使用 [Hugo](https://gohugo.io/) + 主題 [Bear Cub](https://github.com/clente/hugo-bearcub) 製作"
   [languages.ja]
     title = "randint.cc"
     languageName = "日本語"
     LanguageCode = "ja"
     contentDir = "content/ja"
     [languages.ja.params]
-      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
+      madeWith = "Made with [Hugo](https://gohugo.io/) + [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]
   # The description of your website
