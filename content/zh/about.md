@@ -1,16 +1,7 @@
 +++
 title = "About"
-date = "2025-01-03T14:57:58+09:00"
-#dateFormat = "2006-01-02" # This value can be configured for per-post date formatting
-author = "randint"
-authorTwitter = "" #do not include @
-cover = ""
-tags = ["", ""]
-keywords = ["", ""]
-description = ""
-showFullContent = false
-readingTime = false
-hideComments = false
+date = "2025-01-03"
+draft = true
 +++
 
 # 關於我
