@@ -1,7 +1,6 @@
 # Basic config
 baseURL = "https://randint.cc"
 theme = "hugo-bearcub"
-copyright = "© 2025 randint"
 defaultContentLanguage = "en"
 
 # Generate a nice robots.txt for SEO
@@ -27,6 +26,7 @@ enableRobotsTXT = true
     languageName = "English"
     LanguageCode = "en-us"
     contentDir = "content/en"
+    copyright = "Licensed under CC BY-NC-SA 4.0"
     [languages.en.params]
       madeWith = "Made with [Hugo](https://gohugo.io/) + [Bear Cub](https://github.com/clente/hugo-bearcub)"
       dateFormat = "2 Jan 2006"
@@ -35,6 +35,7 @@ enableRobotsTXT = true
     languageName = "繁體中文"
     LanguageCode = "zh-tw"
     contentDir = "content/zh"
+    copyright = "採用 CC BY-NC-SA 4.0 授權"
     [languages.zh.params]
       madeWith = "使用 [Hugo](https://gohugo.io/) + 主題 [Bear Cub](https://github.com/clente/hugo-bearcub) 製作"
       dateFormat = "2006年1月2日"
@@ -43,6 +44,7 @@ enableRobotsTXT = true
     languageName = "日本語"
     LanguageCode = "ja"
     contentDir = "content/ja"
+    copyright = "Licensed under CC BY-NC-SA 4.0"
     [languages.ja.params]
       madeWith = "Made with [Hugo](https://gohugo.io/) + [Bear Cub](https://github.com/clente/hugo-bearcub)"
       dateFormat = "2006年1月2日"
